@@ -1,0 +1,49 @@
+{
+    "name": "vcc/fpd",
+    "description": "Thu vien tuy ben san pham",
+    "keywords": ["vcc", "fpd", "fancy product designer", "laravel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Le Ngoc Doam",
+            "email": "doanln16@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+        
+    },
+    "require-dev": {
+        
+    },
+    "suggest": {
+        "illuminate/database": "The Illuminate Database package (^6.0|^7.0|^8.0)."
+    },
+    "autoload": {
+        "psr-4": {
+            "FPD\\": "src/app/"
+        },
+        "files":[
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "FPD\\Providers\\FPDServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
