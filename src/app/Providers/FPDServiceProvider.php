@@ -6,8 +6,11 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route;
 
+define('FPD_PATH', dirname(dirname(__DIR__)));
+
 class FPDServiceProvider extends ServiceProvider
 {
+    public $namespace = 'FPD\Controllers';
     /**
      * Indicates if loading of the provider is deferred.
      *
@@ -24,6 +27,9 @@ class FPDServiceProvider extends ServiceProvider
     {
         //
         $this->routes();
+        $this->loadViews();
+        $this->publishAssets();
+        $this->loadHelpers();
     }
 
     /**
@@ -42,26 +48,28 @@ class FPDServiceProvider extends ServiceProvider
 
     public function routes()
     {
-        Route::get('fpd', 'FPD\Controllers\TestController@helloWorld')->name('fpd');
+        Route::namespace($this->namespace)->group(FPD_PATH.'/routes/main.php');
     }
 
-    public function loadHelper()
+    public function loadHelpers()
+    {
+        require FPD_PATH . '/helpers/utils.php';
+    }
+
+    public function migrations()
     {
         # code...
     }
 
-    public function migration()
+    public function loadViews()
     {
-        # code...
-    }
-
-    public function setView()
-    {
-        # code...
+        $this->loadViewsFrom(FPD_PATH.'/views', 'fpd');
     }
 
     public function publishAssets()
     {
-        # code...
+        $this->publishes([
+            FPD_PATH.'/assets' => public_path('vendor/fpd'),
+        ], 'public');
     }
 }

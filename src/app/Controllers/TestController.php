@@ -63,4 +63,9 @@ class TestController extends AdminController
     {
         dd($this);
     }
+
+    public function welcome(Request $request)
+    {
+        return $this->view('fpd:client.welcome');
+    }
 }
