@@ -16,8 +16,9 @@ class TestController extends AdminController
 
     protected $moduleName = 'Sản phẩm';
 
-    protected $flashMode = false;
+    // protected $flashMode = false;
 
+    
     /**
      * repository chinh
      *
