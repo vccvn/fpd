@@ -33,7 +33,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "VCC"
+            "dev-master": "vcc-dev"
         },
         "laravel": {
             "providers": [
