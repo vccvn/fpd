@@ -91,7 +91,7 @@ var customImageAjaxSettings = {
 }
 var pluginOpts = {
     designsJSON: '',
-    langJSON: 'assets/lang/default.json',
+    langJSON: fpd_base_url+'/lang/default.json',
     editorMode: false,
     smartGuides: true,
     fonts: [
@@ -100,7 +100,7 @@ var pluginOpts = {
         },
         {
             name: "Pacifico",
-            url: "assets/fonts/Pacifico-Regular.ttf"
+            url: fpd_base_url+"/fonts/Pacifico-Regular.ttf"
         },
         {
             name: "Arial"
@@ -111,67 +111,67 @@ var pluginOpts = {
         },
         {
             name: "Amatic bold",
-            url: "assets/fonts/AmaticSC-Bold.ttf"
+            url: fpd_base_url+"/fonts/AmaticSC-Bold.ttf"
         },
         {
             name: "Arima madurai",
-            url: "assets/fonts/ArimaMadurai-Light.ttf"
+            url: fpd_base_url+"/fonts/ArimaMadurai-Light.ttf"
         },
         {
             name: "Charm",
-            url: "assets/fonts/Charm-Regular.ttf"
+            url: fpd_base_url+"/fonts/Charm-Regular.ttf"
         },
         {
             name: "Charmonman",
-            url: "assets/fonts/Charmonman-Regular.ttf"
+            url: fpd_base_url+"/fonts/Charmonman-Regular.ttf"
         },
         {
             name: "Comfortaa",
-            url: "assets/fonts/Comfortaa-Light.ttf"
+            url: fpd_base_url+"/fonts/Comfortaa-Light.ttf"
         },
         {
             name: "Dancing",
-            url: "assets/fonts/DancingScript-Regular.ttf"
+            url: fpd_base_url+"/fonts/DancingScript-Regular.ttf"
         },
         {
             name: "Farsan",
-            url: "assets/fonts/Farsan-Regular.ttf"
+            url: fpd_base_url+"/fonts/Farsan-Regular.ttf"
         },
         {
             name: "Itim",
-            url: "assets/fonts/Itim-Regular.ttf"
+            url: fpd_base_url+"/fonts/Itim-Regular.ttf"
         },
         {
             name: "Jura",
-            url: "assets/fonts/Jura-Regular.ttf"
+            url: fpd_base_url+"/fonts/Jura-Regular.ttf"
         },
         {
             name: "Open Sans Condensed",
-            url: "assets/fonts/OpenSansCondensed-LightItalic.ttf"
+            url: fpd_base_url+"//fonts/OpenSansCondensed-LightItalic.ttf"
         },
         {
             name: "Oswald",
-            url: "assets/fonts/Oswald-Regular.ttf"
+            url: fpd_base_url+"/fonts/Oswald-Regular.ttf"
         },
         {
             name: "Patrick Hand",
-            url: "assets/fonts/PatrickHand-Regular.ttf"
+            url: fpd_base_url+"/fonts/PatrickHand-Regular.ttf"
         },
         {
             name: "Pattaya",
-            url: "assets/fonts/Pattaya-Regular.ttf"
+            url: fpd_base_url+"/fonts/Pattaya-Regular.ttf"
         },
         {
             name: "Play",
-            url: "assets/fonts/Play-Regular.ttf"
+            url: fpd_base_url+"/fonts/Play-Regular.ttf"
         },
         {
             name: "Roboto Condensed",
-            url: "assets/fonts/RobotoCondensed-Regular.ttf"
+            url: fpd_base_url+"/fonts/RobotoCondensed-Regular.ttf"
         },
         {
             name: "Sedgwick Ave",
-            url: "assets/fonts/SedgwickAve-Regular.ttf"
+            url: fpd_base_url+"/fonts/SedgwickAve-Regular.ttf"
         }
     ],
     elementParameters: {

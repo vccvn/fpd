@@ -16,9 +16,7 @@ class TestController extends AdminController
 
     protected $moduleName = 'Sản phẩm';
 
-    // protected $flashMode = false;
-
-    
+    protected $viewFolder = '';
     /**
      * repository chinh
      *
@@ -67,6 +65,6 @@ class TestController extends AdminController
 
     public function welcome(Request $request)
     {
-        return $this->view('fpd:client.welcome');
+        return view('fpd::client.welcome');
     }
 }

@@ -1,0 +1,108 @@
+[
+    [
+        {
+            "productTitle": "Th\u1ea1ch th\u00e0nh",
+            "title": "Do\u00e3n L\u00ea Ng\u1ecdc",
+            "thumbnail": "http:\/\/opdt.vn\/static\/fpd\/templates\/5f2be5c8213dc.png",
+            "options": {
+                "customAdds": {
+                    "uploads": true,
+                    "texts": true,
+                    "designs": true
+                }
+            },
+            "elements": [
+                {
+                    "title": "0",
+                    "source": "http:\/\/opdt.vn\/static\/files\/2020\/08\/01\/iPhone7-base-combined-outter-5f2521fa1a3d2.svg",
+                    "type": "image",
+                    "parameters": {
+                        "left": 200,
+                        "top": 300,
+                        "originX": "center",
+                        "originY": "center",
+                        "z": -1,
+                        "fill": "#ffffff",
+                        "colors": 0,
+                        "colorLinkGroup": 0,
+                        "draggable": 0,
+                        "rotatable": 0,
+                        "resizable": 0,
+                        "removable": 0,
+                        "flipX": 0,
+                        "flipY": 0,
+                        "zChangeable": 0,
+                        "scaleX": 1.465648855,
+                        "scaleY": 1.465648855,
+                        "uniScalingUnlockable": 0,
+                        "angle": 0,
+                        "price": 0,
+                        "autoCenter": 0,
+                        "replaceInAllViews": 0,
+                        "autoSelect": 0,
+                        "topped": 0,
+                        "boundingBoxMode": "inside",
+                        "opacity": 1,
+                        "excludeFromExport": 0,
+                        "locked": 0,
+                        "showInColorSelection": 0,
+                        "boundingBox": 0,
+                        "resizeToW": 0,
+                        "resizeToH": 0,
+                        "filter": 0,
+                        "scaleMode": "fit",
+                        "minScaleLimit": 0.01,
+                        "advancedEditing": 0,
+                        "uploadZone": 0,
+                        "uploadZoneMovable": 0
+                    }
+                },
+                {
+                    "title": "1",
+                    "source": "http:\/\/opdt.vn\/static\/files\/2020\/08\/02\/iPhone7-with-camera-3-5f26298acf9ea.png",
+                    "type": "image",
+                    "parameters": {
+                        "left": 200,
+                        "top": 300,
+                        "originX": "center",
+                        "originY": "center",
+                        "z": -1,
+                        "fill": false,
+                        "colors": 0,
+                        "colorLinkGroup": 0,
+                        "draggable": 0,
+                        "rotatable": 0,
+                        "resizable": 0,
+                        "removable": 0,
+                        "flipX": 0,
+                        "flipY": 0,
+                        "zChangeable": false,
+                        "scaleX": 0.5731343284,
+                        "scaleY": 0.5731343284,
+                        "uniScalingUnlockable": 0,
+                        "angle": 0,
+                        "price": 0,
+                        "autoCenter": 0,
+                        "replaceInAllViews": 0,
+                        "autoSelect": 0,
+                        "topped": 1,
+                        "boundingBoxMode": "inside",
+                        "opacity": 1,
+                        "excludeFromExport": 0,
+                        "locked": 0,
+                        "showInColorSelection": 0,
+                        "boundingBox": 0,
+                        "resizeToW": 0,
+                        "resizeToH": 0,
+                        "filter": 0,
+                        "scaleMode": "fit",
+                        "minScaleLimit": 0.01,
+                        "advancedEditing": 0,
+                        "uploadZone": 0,
+                        "uploadZoneMovable": 0
+                    }
+                }
+            ]
+        }
+    ]
+]

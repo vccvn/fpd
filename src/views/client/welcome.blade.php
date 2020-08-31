@@ -10,23 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="icon.ico" rel="shortcut icon" type="image/x-icon" />
     <title>Tự thiết kế và đặt in ốp điện thoại theo yêu cầu</title>
-    <meta name='description'
-        content='Tự thiết kế và đặt in ốp điện thoại theo yêu cầu giá chỉ từ 69K, giao hàng toàn quốc, nhận hàng kiểm tra mới cần thanh toán.'>
-    <meta itemprop='name' content='Tự thiết kế và đặt in ốp điện thoại theo yêu cầu'>
-    <meta itemprop='description'
-        content='Tự thiết kế và đặt in ốp điện thoại theo yêu cầu giá chỉ từ 69K, giao hàng toàn quốc, nhận hàng kiểm tra mới cần thanh toán.'>
-    <meta itemprop='image' content='contents/other/image_20190929161831793.jpg'>
-    <meta property='og:url' content='tu-thiet-ke-op-lung.html'>
-    <meta property='og:type' content='website'>
-    <meta property='og:title' content='Tự thiết kế và đặt in ốp điện thoại theo yêu cầu'>
-    <meta property='og:description'
-        content='Tự thiết kế và đặt in ốp điện thoại theo yêu cầu giá chỉ từ 69K, giao hàng toàn quốc, nhận hàng kiểm tra mới cần thanh toán.'>
-    <meta property='og:image' content='contents/other/image_20190929161831793.jpg'>
-    <meta name='twitter:card' content='summary_large_image'>
-    <meta itemprop='twitter:title' content='Tự thiết kế và đặt in ốp điện thoại theo yêu cầu'>
-    <meta itemprop='twitter:description'
-        content='Tự thiết kế và đặt in ốp điện thoại theo yêu cầu giá chỉ từ 69K, giao hàng toàn quốc, nhận hàng kiểm tra mới cần thanh toán.'>
-    <meta itemprop='twitter:image' content='contents/other/image_20190929161831793.jpg'>
+    
     <link href="{{fpd_asset('css/bootstrap.min.css')}}" rel="stylesheet" />
     <link href="{{fpd_asset('css/fa/font-awesome.min.css')}}" rel="stylesheet">
     <link href="{{fpd_asset('css/hate.css?v=1.0.3')}}" rel="stylesheet">
@@ -34,10 +18,41 @@
     <link href="{{fpd_asset('css/style.css?v=1.0.5')}}" rel="stylesheet">
     <link href="{{fpd_asset('css/main.css?v=1.0.0')}}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{fpd_asset('css/FancyProductDesigner-all.min.css')}}" />
+    
+        <style>
+            .close {
+                text-align: right;
+                width: 5px;
+                position: absolute;
+                right: 16px;
+                top: -24px;
+                font-size: 47px;
+            }
+
+            #fancy-product-designer {
+                position: relative;
+                max-width: calc(100% - 40px) !important;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
     <script type="text/javascript" src="{{fpd_asset('js/jquery.min.js')}}"></script>
     <script type="text/javascript" src="{{fpd_asset('js/jquery-ui.min.js')}}"></script>
     <script type="text/javascript" src="{{fpd_asset('js/fabric.min.js')}}"></script>
     <script type="text/javascript" src="{{fpd_asset('js/FancyProductDesigner-all.js')}}"></script>
+
+
+    <script>
+        var fpd_base_url = "{{asset('plugins/fpd')}}";
+        var fpd_client_opts = {!!
+            json_encode([
+                'product_list_url' => route('fpd.products'),
+                'design_url' => route('fpd.design'),
+                
+            ])
+        !!}
+    </script>
+
     <script src="{{fpd_asset('js/Design.js')}}"></script>
     <script src="{{fpd_asset('js/index.js?v=1.0.5')}}"></script>
 
@@ -49,7 +64,7 @@
             <li>
                 <a href="tu-thiet-ke-op-lung.html" title="Đặt in ngay">
                     <span>
-                        <img alt="Đặt in ngay" src="contents/neo/in.png')}}" title="Đặt in ngay" />
+                        <img alt="Đặt in ngay" src="{{fpd_asset('contents/neo/in.png')}}" title="Đặt in ngay" />
                     </span>
                     <span> Đặt in ngay </span>
                 </a>
@@ -57,7 +72,7 @@
             <li>
                 <a href="https://m.me/inoplungtoanquoc" title="Facebook Chat">
                     <span>
-                        <img alt="Facebook Chat" src="contents/neo/facebook.png')}}" title="Facebook Chat" />
+                        <img alt="Facebook Chat" src="{{fpd_asset('contents/neo/facebook.png')}}" title="Facebook Chat" />
                     </span>
                     <span> Facebook Chat </span>
                 </a>
@@ -65,7 +80,7 @@
             <li>
                 <a href="https://zalo.me/3317471300735720753" title="Zalo Chat">
                     <span>
-                        <img alt="Zalo Chat" src="contents/neo/zalo.png')}}" title="Zalo Chat" />
+                        <img alt="Zalo Chat" src="{{fpd_asset('contents/neo/zalo.png')}}" title="Zalo Chat" />
                     </span>
                     <span>Zalo Chat</span>
                 </a>
@@ -149,25 +164,6 @@
     </nav>
     <main role="main">
 
-
-
-        <style>
-            .close {
-                text-align: right;
-                width: 5px;
-                position: absolute;
-                right: 16px;
-                top: -24px;
-                font-size: 47px;
-            }
-
-            #fancy-product-designer {
-                position: relative;
-                max-width: calc(100% - 40px) !important;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        </style>
         <section class="section" id="tuthietke">
             <div class="bg section-bg fill bg-fill bg-loaded bg-loaded"></div>
             <div class="section-content relative">
@@ -199,104 +195,20 @@
                                 </form>
                             </div>
                             <div class="row row-collapse row-full-width" style="margin-top: 36px; margin-bottom:30px">
-                                <div class="col medium-3 small-6 large-mb-3">
-                                    <div class="col-inner" style="padding:0px 5px 0px 5px;">
-                                        <a onclick="loadMobile(this,1)" class="button lowercase expand"
-                                            style="border-radius:10px; background-color:#020000;opacity:0.7">
-                                            <span>iPhone</span></a>
-                                    </div>
-                                </div>
-                                <div class="col medium-3 small-6 large-mb-3">
-                                    <div class="col-inner" style="padding:0px 5px 0px 5px;">
-                                        <a onclick="loadMobile(this,18)" class="button lowercase expand"
-                                            style="border-radius:10px; background-color:#020000;opacity:0.7">
-                                            <span>Samsung</span></a>
-                                    </div>
-                                </div>
-                                <div class="col medium-3 small-6 large-mb-3">
-                                    <div class="col-inner" style="padding:0px 5px 0px 5px;">
-                                        <a onclick="loadMobile(this,148)" class="button lowercase expand"
-                                            style="border-radius:10px; background-color:#020000;opacity:0.7">
-                                            <span>Oppo/Realme</span></a>
-                                    </div>
-                                </div>
-                                <div class="col medium-3 small-6 large-mb-3">
-                                    <div class="col-inner" style="padding:0px 5px 0px 5px;">
-                                        <a onclick="loadMobile(this,214)" class="button lowercase expand"
-                                            style="border-radius:10px; background-color:#020000;opacity:0.7">
-                                            <span>Xiaomi</span></a>
-                                    </div>
-                                </div>
-                                <div class="col medium-3 small-6 large-mb-3">
-                                    <div class="col-inner" style="padding:0px 5px 0px 5px;">
-                                        <a onclick="loadMobile(this,276)" class="button lowercase expand"
-                                            style="border-radius:10px; background-color:#020000;opacity:0.7">
-                                            <span>Sony</span></a>
-                                    </div>
-                                </div>
-                                <div class="col medium-3 small-6 large-mb-3">
-                                    <div class="col-inner" style="padding:0px 5px 0px 5px;">
-                                        <a onclick="loadMobile(this,311)" class="button lowercase expand"
-                                            style="border-radius:10px; background-color:#020000;opacity:0.7">
-                                            <span>Asus</span></a>
-                                    </div>
-                                </div>
-                                <div class="col medium-3 small-6 large-mb-3">
-                                    <div class="col-inner" style="padding:0px 5px 0px 5px;">
-                                        <a onclick="loadMobile(this,337)" class="button lowercase expand"
-                                            style="border-radius:10px; background-color:#020000;opacity:0.7">
-                                            <span>Nokia</span></a>
-                                    </div>
-                                </div>
-                                <div class="col medium-3 small-6 large-mb-3">
-                                    <div class="col-inner" style="padding:0px 5px 0px 5px;">
-                                        <a onclick="loadMobile(this,362)" class="button lowercase expand"
-                                            style="border-radius:10px; background-color:#020000;opacity:0.7">
-                                            <span>Huawei</span></a>
-                                    </div>
-                                </div>
-                                <div class="col medium-3 small-6 large-mb-3">
-                                    <div class="col-inner" style="padding:0px 5px 0px 5px;">
-                                        <a onclick="loadMobile(this,401)" class="button lowercase expand"
-                                            style="border-radius:10px; background-color:#020000;opacity:0.7">
-                                            <span>Vivo</span></a>
-                                    </div>
-                                </div>
-                                <div class="col medium-3 small-6 large-mb-3">
-                                    <div class="col-inner" style="padding:0px 5px 0px 5px;">
-                                        <a onclick="loadMobile(this,441)" class="button lowercase expand"
-                                            style="border-radius:10px; background-color:#020000;opacity:0.7">
-                                            <span>LG</span></a>
-                                    </div>
-                                </div>
-                                <div class="col medium-3 small-6 large-mb-3">
-                                    <div class="col-inner" style="padding:0px 5px 0px 5px;">
-                                        <a onclick="loadMobile(this,456)" class="button lowercase expand"
-                                            style="border-radius:10px; background-color:#020000;opacity:0.7">
-                                            <span>HTC</span></a>
-                                    </div>
-                                </div>
-                                <div class="col medium-3 small-6 large-mb-3">
-                                    <div class="col-inner" style="padding:0px 5px 0px 5px;">
-                                        <a onclick="loadMobile(this,470)" class="button lowercase expand"
-                                            style="border-radius:10px; background-color:#020000;opacity:0.7">
-                                            <span>Lenovo</span></a>
-                                    </div>
-                                </div>
-                                <div class="col medium-3 small-6 large-mb-3">
-                                    <div class="col-inner" style="padding:0px 5px 0px 5px;">
-                                        <a onclick="loadMobile(this,479)" class="button lowercase expand"
-                                            style="border-radius:10px; background-color:#020000;opacity:0.7">
-                                            <span>Vsmart</span></a>
-                                    </div>
-                                </div>
-                                <div class="col medium-3 small-6 large-mb-3">
-                                    <div class="col-inner" style="padding:0px 5px 0px 5px;">
-                                        <a onclick="loadMobile(this,488)" class="button lowercase expand"
-                                            style="border-radius:10px; background-color:#020000;opacity:0.7">
-                                            <span>Meizu</span></a>
-                                    </div>
-                                </div>
+                                @if (isset($categories) && count($categories))
+                                    @foreach ($categories as $cate)
+                                        
+                                        <div class="col medium-3 small-6 large-mb-3">
+                                            <div class="col-inner" style="padding:0px 5px 0px 5px;">
+                                                <a onclick="loadMobile(this,{{$cate->id}})" class="button lowercase expand"
+                                                    style="border-radius:10px; background-color:#020000;opacity:0.7">
+                                                    <span>{{$cate->name}}</span></a>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                @else
+                                    
+                                @endif
                             </div>
                             <h3><span style="font-size: 100%; color:black; padding-bottom:10px">Trong trường hợp bạn
                                     không nhớ chính xác tên dòng máy hoặc không tìm thấy trên website, vui lòng chat với
@@ -324,7 +236,7 @@
                     </div>
 
                     <div class="unit-image-one"><img alt="Tự thiết kế dễ dàng"
-                            src="contents/other/image_20190929161831793.jpg')}}" title="Tự thiết kế dễ dàng" /></div>
+                            src="{{fpd_asset('contents/other/image_20190929161831793.jpg')}}" title="Tự thiết kế dễ dàng" /></div>
                 </div>
             </div>
         </div>

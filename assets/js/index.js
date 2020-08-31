@@ -32,7 +32,7 @@ function loadMobile(elm, id) {
     //     $('.mfp-bg').show();
     //     $('.mfp-wrap').slideDown(200);
     // });
-    $.get('ajax/cate.html', { cateId: id }, function (data) {
+    $.get(fpd_client_opts.product_list_url, { category_id: id }, function (data) {
         $('.title-pop-inop').html(textMobile);
         $('#listMobile').html(data);
         $('.mfp-bg').show();
@@ -52,7 +52,7 @@ function loadDesign(elm, id) {
     //     //$('html').css('overflow-y', 'hidden');
     //     document.getElementById("popup-form-design").style.display = "block";
     // });
-    $.get('ajax/design.html', { cateId: id }, function (data) {
+    $.get(fpd_client_opts.design_url, { id: id }, function (data) {
         //$('#design-fancy').html(data);
         $('#fancy-content').html(data);
         //$('html').css('overflow-y', 'hidden');

@@ -1,0 +1,865 @@
+<script type="text/javascript">
+    var isMobile = 'False';
+    stageHeight = screen.height;
+    if (isMobile.toLowerCase() === 'true') {
+        if (stageHeight > 700) {
+            stageHeight = 620
+        } else if (stageHeight > 568) {
+            stageHeight = stageHeight;
+        }
+        else {
+            stageHeight = stageHeight;
+        }
+    } else {
+        if (stageHeight > 700) {
+            stageHeight = 550
+        } else {
+            stageHeight = stageHeight - 300;
+        }
+    }
+    stageWidth = 500;
+    //alert(stageHeight);
+    var top = 0;
+    var left = 0;
+
+    var scaleX = (stageHeight - 35) / 846;
+    var scaleY = (stageHeight - 35) / 846;
+    var fancyProductDesigner, $body,
+        $selector;
+    var fpdProductsJSON = [
+        [
+            {
+                "productTitle": "Th\u1ea1ch th\u00e0nh", 
+                "title": "Do\u00e3n L\u00ea Ng\u1ecdc", 
+                "thumbnail": "http:\/\/opdt.vn\/static\/fpd\/templates\/5f2be5c8213dc.png", 
+                "options": { 
+                    "customAdds": { 
+                        "uploads": true, 
+                        "texts": true, 
+                        "designs": true 
+                    } 
+                } 
+            }
+        ]
+    ];
+
+
+    jQuery(document).ready(function () {
+        var fpdProductsJSON = [
+            [
+                {
+                    "productTitle": "Iphone  Xs Max",
+                    "title": "Iphone  Xs Max",
+                    "thumbnail": "http://opgiare.com/media/product/cat/xs maxx_(1).png",
+                    "options": {
+                        "customAdds": {
+                            "uploads": true,
+                            "texts": true,
+                            "designs": true
+                        }
+                    },
+                    "elements": [
+                        {
+                            "type": "image",
+                            "title": "upload",
+                            "source": "http://opgiare.com/media/product/mobile_upload.png",
+                            "parameters": {
+                                "uploadZone": 0,
+                                "left": left,
+                                "top": top,
+                                "scaleX": scaleX,
+                                "scaleY": scaleY,
+                                "degree": 0,
+                                "price": 0,
+                                "originX": "center",
+                                "originY": "center",
+                                "opacity": 1,
+                                "removable": false,
+                                "draggable": false,
+                                "rotatable": false,
+                                "resizable": false,
+                                "zChangeable": false,
+                                "topped": false,
+                                "autoSelect": false,
+                                "uniScalingUnlockable": false,
+                                "excludeFromExport": false,
+                                "advancedEditing": false,
+                                "locked": false,
+                                "boundingBoxMode": "clipping",
+                                "customAdds": []
+                            }
+                        },
+                        {
+                            "type": "image",
+                            "title": "6",
+                            "source": "http://opgiare.com/media/product/cat/xs maxx_(1).png",
+                            "parameters": {
+                                "uploadZone": 0,
+                                "left": left,
+                                "top": top,
+                                "scaleX": scaleX,
+                                "scaleY": scaleY,
+                                "degree": 0,
+                                "price": 0,
+                                "originX": "center",
+                                "originY": "center",
+                                "opacity": 1,
+                                "removable": false,
+                                "draggable": false,
+                                "rotatable": false,
+                                "resizable": false,
+                                "zChangeable": false,
+                                "topped": true,
+                                "autoSelect": false,
+                                "uniScalingUnlockable": false,
+                                "excludeFromExport": false,
+                                "advancedEditing": false,
+                                "locked": false,
+                                "boundingBoxMode": "limitModify",
+                                "customAdds": []
+                            }
+                        }
+                    ]
+                },
+                {
+                    "productTitle": "iPhone 11 Pro Max",
+                    "title": "11 Pro Max",
+                    "thumbnail": "/inop.vn/Content/devices/iPhone_11_Pro_Max.png",
+                    "options": {
+                        "customAdds": {
+                            "uploads": true,
+                            "texts": true,
+                            "designs": true
+                        }
+                    },
+                    "elements": [
+                        {
+                            "type": "image",
+                            "title": "upload",
+                            "source": "/inop.vn/Content/image/mobile_upload.png",
+                            "parameters": {
+                                "uploadZone": 0,
+                                "left": left,
+                                "top": top,
+                                "scaleX": scaleX,
+                                "scaleY": scaleY,
+                                "degree": 0,
+                                "price": 0,
+                                "originX": "center",
+                                "originY": "center",
+                                "opacity": 1,
+                                "removable": false,
+                                "draggable": false,
+                                "rotatable": false,
+                                "resizable": false,
+                                "zChangeable": false,
+                                "topped": false,
+                                "autoSelect": false,
+                                "uniScalingUnlockable": false,
+                                "excludeFromExport": false,
+                                "advancedEditing": false,
+                                "locked": false,
+                                "boundingBoxMode": "clipping",
+                                "customAdds": []
+                            }
+                        },
+                        {
+                            "type": "image",
+                            "title": "2",
+                            "source": "/inop.vn/Content/devices/iPhone_11_Pro_Max.png",
+                            "parameters": {
+                                "uploadZone": 0,
+                                "left": left,
+                                "top": top,
+                                "scaleX": scaleX,
+                                "scaleY": scaleY,
+                                "degree": 0,
+                                "price": 0,
+                                "originX": "center",
+                                "originY": "center",
+                                "opacity": 1,
+                                "removable": false,
+                                "draggable": false,
+                                "rotatable": false,
+                                "resizable": false,
+                                "zChangeable": false,
+                                "topped": true,
+                                "autoSelect": false,
+                                "uniScalingUnlockable": false,
+                                "excludeFromExport": false,
+                                "advancedEditing": false,
+                                "locked": false,
+                                "boundingBoxMode": "limitModify",
+                                "customAdds": []
+                            }
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "productTitle": "iPhone 11 Pro Max",
+                    "title": "11 Pro Max",
+                    "thumbnail": "/inop.vn/Content/devices/iPhone_11_Pro_Max.png",
+                    "options": {
+                        "customAdds": {
+                            "uploads": true,
+                            "texts": true,
+                            "designs": true
+                        }
+                    },
+                    "elements": [
+                        {
+                            "type": "image",
+                            "title": "upload",
+                            "source": "/inop.vn/Content/image/mobile_upload.png",
+                            "parameters": {
+                                "uploadZone": 0,
+                                "left": left,
+                                "top": top,
+                                "scaleX": scaleX,
+                                "scaleY": scaleY,
+                                "degree": 0,
+                                "price": 0,
+                                "originX": "center",
+                                "originY": "center",
+                                "opacity": 1,
+                                "removable": false,
+                                "draggable": false,
+                                "rotatable": false,
+                                "resizable": false,
+                                "zChangeable": false,
+                                "topped": false,
+                                "autoSelect": false,
+                                "uniScalingUnlockable": false,
+                                "excludeFromExport": false,
+                                "advancedEditing": false,
+                                "locked": false,
+                                "boundingBoxMode": "clipping",
+                                "customAdds": []
+                            }
+                        },
+                        {
+                            "type": "image",
+                            "title": "2",
+                            "source": "/inop.vn/Content/devices/iPhone_11_Pro_Max.png",
+                            "parameters": {
+                                "uploadZone": 0,
+                                "left": left,
+                                "top": top,
+                                "scaleX": scaleX,
+                                "scaleY": scaleY,
+                                "degree": 0,
+                                "price": 0,
+                                "originX": "center",
+                                "originY": "center",
+                                "opacity": 1,
+                                "removable": false,
+                                "draggable": false,
+                                "rotatable": false,
+                                "resizable": false,
+                                "zChangeable": false,
+                                "topped": true,
+                                "autoSelect": false,
+                                "uniScalingUnlockable": false,
+                                "excludeFromExport": false,
+                                "advancedEditing": false,
+                                "locked": false,
+                                "boundingBoxMode": "limitModify",
+                                "customAdds": []
+                            }
+                        }
+                    ]
+                }
+            ]
+        ];
+
+        var fpdDesignsJSON = [
+            {
+                "title": "rồng",
+                "thumbnail": "http://opgiare.com/media/gallery/cover/tb/Khung Rồng.png"
+            },
+            {
+                "title": "hoa hướng dương",
+                "thumbnail": "http://opgiare.com/media/gallery/cover/tb/Khung Hướng dương.png",
+                "designs": [
+                    {
+                        "source": "http://opgiare.com/media/gallery/25/Khung Hướng dương (1).png",
+                        "title": "",
+                        "thumbnail": "http://opgiare.com/media/gallery/25/Khung Hướng dương (1).png",
+                        "parameters": {
+                            "left": 0,
+                            "y": 0,
+                            "z": -1,
+                            "minScaleLimit": "0.0100",
+                            "price": 0,
+                            "replaceInAllViews": false,
+                            "autoCenter": true,
+                            "draggable": true,
+                            "rotatable": true,
+                            "resizable": true,
+                            "zChangeable": false,
+                            "autoSelect": true,
+                            "topped": false,
+                            "uniScalingUnlockable": false,
+                            "boundingBoxMode": "clipping",
+                            "removable": true,
+                            "boundingBox": "upload"
+                        }
+                    },
+                    {
+                        "source": "http://opgiare.com/media/gallery/25/Khung Hướng dương.png",
+                        "title": null,
+                        "thumbnail": "http://opgiare.com/media/gallery/25/Khung Hướng dương.png",
+                        "parameters": {
+                            "left": 0,
+                            "y": 0,
+                            "z": -1,
+                            "minScaleLimit": "0.0100",
+                            "price": 0,
+                            "replaceInAllViews": false,
+                            "autoCenter": true,
+                            "draggable": true,
+                            "rotatable": true,
+                            "resizable": true,
+                            "zChangeable": false,
+                            "autoSelect": true,
+                            "topped": false,
+                            "uniScalingUnlockable": false,
+                            "boundingBoxMode": "clipping",
+                            "removable": true,
+                            "boundingBox": "upload"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "đại dương",
+                "thumbnail": "http://opgiare.com/media/gallery/cover/tb/Nền ghép 4.png",
+                "designs": [
+                    {
+                        "source": "http://opgiare.com/media/gallery/24/Nền ghép 4.png",
+                        "title": null,
+                        "thumbnail": "http://opgiare.com/media/gallery/24/Nền ghép 4.png",
+                        "parameters": {
+                            "left": 0,
+                            "y": 0,
+                            "z": -1,
+                            "minScaleLimit": "0.0100",
+                            "price": 0,
+                            "replaceInAllViews": false,
+                            "autoCenter": true,
+                            "draggable": true,
+                            "rotatable": true,
+                            "resizable": true,
+                            "zChangeable": false,
+                            "autoSelect": true,
+                            "topped": false,
+                            "uniScalingUnlockable": false,
+                            "boundingBoxMode": "clipping",
+                            "removable": true,
+                            "boundingBox": "upload"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Khung hoa",
+                "thumbnail": "http://opgiare.com/media/gallery/cover/tb/86940de98763defb504f254e40b3888f.png",
+                "designs": [
+                    {
+                        "source": "http://opgiare.com/media/gallery/17/86940de98763defb504f254e40b3888f.png",
+                        "title": "",
+                        "thumbnail": "http://opgiare.com/media/gallery/17/86940de98763defb504f254e40b3888f.png",
+                        "parameters": {
+                            "left": 0,
+                            "y": 0,
+                            "z": -1,
+                            "minScaleLimit": "0.0100",
+                            "price": 0,
+                            "replaceInAllViews": false,
+                            "autoCenter": true,
+                            "draggable": true,
+                            "rotatable": true,
+                            "resizable": true,
+                            "zChangeable": false,
+                            "autoSelect": true,
+                            "topped": false,
+                            "uniScalingUnlockable": false,
+                            "boundingBoxMode": "clipping",
+                            "removable": true,
+                            "boundingBox": "upload"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Hạnh phúc",
+                "thumbnail": "http://opgiare.com/media/gallery/cover/tb/3872f1474c374995d16a1eb8ac23b6cb.png",
+                "designs": [
+                    {
+                        "source": "http://opgiare.com/media/gallery/18/3872f1474c374995d16a1eb8ac23b6cb.png",
+                        "title": "",
+                        "thumbnail": "http://opgiare.com/media/gallery/18/3872f1474c374995d16a1eb8ac23b6cb.png",
+                        "parameters": {
+                            "left": 0,
+                            "y": 0,
+                            "z": -1,
+                            "minScaleLimit": "0.0100",
+                            "price": 0,
+                            "replaceInAllViews": false,
+                            "autoCenter": true,
+                            "draggable": true,
+                            "rotatable": true,
+                            "resizable": true,
+                            "zChangeable": false,
+                            "autoSelect": true,
+                            "topped": false,
+                            "uniScalingUnlockable": false,
+                            "boundingBoxMode": "clipping",
+                            "removable": true,
+                            "boundingBox": "upload"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Galaxy",
+                "thumbnail": "http://opgiare.com/media/gallery/cover/tb/khung 2 galaxy.png",
+                "designs": [
+                    {
+                        "source": "http://opgiare.com/media/gallery/20/khung 2 galaxy.png",
+                        "title": "",
+                        "thumbnail": "http://opgiare.com/media/gallery/20/khung 2 galaxy.png",
+                        "parameters": {
+                            "left": 0,
+                            "y": 0,
+                            "z": -1,
+                            "minScaleLimit": "0.0100",
+                            "price": 0,
+                            "replaceInAllViews": false,
+                            "autoCenter": true,
+                            "draggable": true,
+                            "rotatable": true,
+                            "resizable": true,
+                            "zChangeable": false,
+                            "autoSelect": true,
+                            "topped": false,
+                            "uniScalingUnlockable": false,
+                            "boundingBoxMode": "clipping",
+                            "removable": true,
+                            "boundingBox": "upload"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Khung Love",
+                "thumbnail": "http://opgiare.com/media/gallery/cover/tb/khung 2 vuong xanh.png",
+                "designs": [
+                    {
+                        "source": "http://opgiare.com/media/gallery/19/khung 2 vuong xanh.png",
+                        "title": "Khung Love",
+                        "thumbnail": "http://opgiare.com/media/gallery/19/khung 2 vuong xanh.png",
+                        "parameters": {
+                            "left": 0,
+                            "y": 0,
+                            "z": -1,
+                            "minScaleLimit": "0.0100",
+                            "price": 0,
+                            "replaceInAllViews": false,
+                            "autoCenter": true,
+                            "draggable": true,
+                            "rotatable": true,
+                            "resizable": true,
+                            "zChangeable": false,
+                            "autoSelect": true,
+                            "topped": false,
+                            "uniScalingUnlockable": false,
+                            "boundingBoxMode": "clipping",
+                            "removable": true,
+                            "boundingBox": "upload"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Tình yêu rộng lớn",
+                "thumbnail": "http://opgiare.com/media/gallery/cover/tb/khung 2 tim rừng.png",
+                "designs": [
+                    {
+                        "source": "http://opgiare.com/media/gallery/21/khung 2 tim rừng.png",
+                        "title": "",
+                        "thumbnail": "http://opgiare.com/media/gallery/21/khung 2 tim rừng.png",
+                        "parameters": {
+                            "left": 0,
+                            "y": 0,
+                            "z": -1,
+                            "minScaleLimit": "0.0100",
+                            "price": 0,
+                            "replaceInAllViews": false,
+                            "autoCenter": true,
+                            "draggable": true,
+                            "rotatable": true,
+                            "resizable": true,
+                            "zChangeable": false,
+                            "autoSelect": true,
+                            "topped": false,
+                            "uniScalingUnlockable": false,
+                            "boundingBoxMode": "clipping",
+                            "removable": true,
+                            "boundingBox": "upload"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Cafe Sáng",
+                "thumbnail": "http://opgiare.com/media/gallery/cover/tb/Nền ghép 3.png"
+            },
+            {
+                "title": "Ấm áp",
+                "thumbnail": "http://opgiare.com/media/gallery/cover/tb/ghép 3.png",
+                "designs": [
+                    {
+                        "source": "http://opgiare.com/media/gallery/23/ghép 3.png",
+                        "title": "mẫu 3 ảnh đẹp",
+                        "thumbnail": "http://opgiare.com/media/gallery/23/ghép 3.png",
+                        "parameters": {
+                            "left": 0,
+                            "y": 0,
+                            "z": -1,
+                            "minScaleLimit": "0.0100",
+                            "price": 0,
+                            "replaceInAllViews": false,
+                            "autoCenter": true,
+                            "draggable": true,
+                            "rotatable": true,
+                            "resizable": true,
+                            "zChangeable": false,
+                            "autoSelect": true,
+                            "topped": false,
+                            "uniScalingUnlockable": false,
+                            "boundingBoxMode": "clipping",
+                            "removable": true,
+                            "boundingBox": "upload"
+                        }
+                    }
+                ]
+            }
+        ];
+
+        var fpdProductsPrint = [
+            [
+                {
+                    "productTitle": "Iphone  Xs Max",
+                    "title": "FDI.Simple.BrandItem",
+                    "thumbnail": "http://opgiare.com/media/product/cat/xs maxx_(1).png",
+                    "options": {
+                        "customAdds": {
+                            "uploads": true,
+                            "texts": true,
+                            "designs": true
+                        }
+                    },
+                    "elements": [
+                        {
+                            "type": "image",
+                            "title": "upload",
+                            "source": "http://opgiare.com/media/product/mobile_upload.png",
+                            "parameters": {
+                                "uploadZone": 0,
+                                "scaleX": 1,
+                                "scaleY": 1,
+                                "degree": 0,
+                                "price": 0,
+                                "originX": "center",
+                                "originY": "center",
+                                "opacity": 1,
+                                "removable": false,
+                                "draggable": false,
+                                "rotatable": false,
+                                "resizable": false,
+                                "zChangeable": false,
+                                "topped": false,
+                                "autoSelect": false,
+                                "uniScalingUnlockable": false,
+                                "excludeFromExport": false,
+                                "advancedEditing": false,
+                                "locked": false,
+                                "boundingBoxMode": "inside",
+                                "customAdds": []
+                            }
+                        }
+                    ]
+                }]
+        ];
+
+        $selector = jQuery('#fancy-product-designer');
+        $body = jQuery('body');
+        pluginOpts.stageWidth = stageWidth;
+        pluginOpts.stageHeight = stageHeight;
+        pluginOpts.customTextParameters = customTextParameters;
+        pluginOpts.customImageParameters = customImageParams;
+        pluginOpts.customImageAjaxSettings = {
+            url: '/products/upload?cat=6&code=202007271595869071',
+            data: {
+                saveOnServer: 0,
+                uploadsDir: '/media/product',
+                uploadsDirURL: 'http://opgiare.com/media/product'
+            }
+        },
+            pluginOpts = jQuery.extend({}, pluginOpts, uiLayoutOptions);
+        fancyProductDesigner = new FancyProductDesigner($selector, pluginOpts);
+
+        $selector.on('uiSet', function () {
+            //custom module placements
+            jQuery('.fpd-sc-module-wrapper').each(function (i, moduleWrapper) {
+
+                if (typeof FancyProductDesigner === 'undefined') {
+                    return;
+                }
+
+                var $moduleWrapper = jQuery(moduleWrapper),
+                    moduleType = $moduleWrapper.data('type'),
+                    $moduleClone = fancyProductDesigner.translatedUI.find('.fpd-modules > [data-module="' + moduleType + '"]').clone();
+
+                $moduleClone.appendTo($moduleWrapper);
+
+                switch (moduleType) {
+                    case 'products':
+                        new FPDProductsModule(fancyProductDesigner, $moduleClone);
+                        break;
+                    case 'text':
+                        new FPDTextModule(fancyProductDesigner, $moduleClone);
+                        break;
+                    case 'designs':
+                        new FPDDesignsModule(fancyProductDesigner, $moduleClone);
+                        break;
+                    case 'images':
+                        new FPDImagesModule(fancyProductDesigner, $moduleClone);
+                        break;
+                }
+
+                if (typeof FancyProductDesignerPlus !== 'undefined') {
+
+                    switch (moduleType) {
+                        case 'drawing':
+                            var fpdDrawingModule = new FPDDrawingModule(fancyProductDesigner, $moduleClone);
+                            fpdDrawingModule.drawCanvas.setWidth($moduleClone.width());
+                            break;
+                    }
+                }
+            });
+
+        })
+            .on('ready', function () {
+                fancyProductDesigner.setupProducts(fpdProductsJSON);
+                fancyProductDesigner.setupDesigns(fpdDesignsJSON);
+            })
+            .on('productCreate', function () {
+                //calculate initial elemens length for customization required
+                initialElementsLength = 0;
+                fancyProductDesigner.getElements().forEach(function (view) {
+                    initialElementsLength += view.length;
+                });
+
+            })
+            .on('undoRedoSet', function (evt, undos, redos) {
+                $body.removeClass('fpd-customization-required');
+            })
+            .on('viewSelect', function () {
+                jQuery('.fpd-sc-module-wrapper[data-type="names-numbers"]').each(function (i, moduleWrapper) {
+                    if (typeof FPDNamesNumbersModule !== 'undefined') {
+                        var $moduleWrapper = jQuery(moduleWrapper);
+                        FPDNamesNumbersModule.setup(fancyProductDesigner, $moduleWrapper.children('.fpd-module'));
+                    }
+                });
+
+            })
+            .on('layersListUpdate', function (data) {
+                jQuery('.fpd-sc-module-wrapper[data-type="manage-layers"]').each(function (i, moduleWrapper) {
+                    if (typeof FancyProductDesigner !== 'undefined') {
+                        var $moduleWrapper = jQuery(moduleWrapper);
+                        FPDLayersModule.createList(fancyProductDesigner, $moduleWrapper.children('.fpd-module'));
+                    }
+                });
+
+                jQuery('.fpd-sc-module-wrapper[data-type="text-layers"]').each(function (i, moduleWrapper) {
+                    if (typeof FancyProductDesigner !== 'undefined') {
+                        var $moduleWrapper = jQuery(moduleWrapper);
+                        FPDTextLayersModule.createList(fancyProductDesigner, $moduleWrapper.children('.fpd-module'));
+                    }
+                });
+            });
+
+        $("input[type=file]").on('change', function () {
+            //console.log(this.files);
+            alert(this.files[0].name);
+        });
+
+        $('.fpd-icon-file-upload').click(function () {
+            alert(1);
+        })
+
+        $(".fpd-upload-form").submit(function (event) {
+            alert("Handler for .submit() called.");
+            event.preventDefault();
+        });
+
+        $('#save-image-php').click(function () {
+            window.onbeforeunload = null;
+            var elements = fancyProductDesigner.getElements();
+            var dataimagesinop = $("#imagesinop").val();
+            var inopImage = [];
+            for (var i = 0; i < elements.length; i++) {
+                if (elements[i].text) {
+                    console.log(elements[i].text);
+                } else {
+                    if (elements[i].boundingBox == 'upload') {
+                        inopImage.push(elements[i].source);
+                    }
+                }
+            }
+
+            fancyProductDesigner.getProductDataURL(function (dataURL) {
+                document.getElementById("popup-form-design").style.display = "none";
+                $('.mfp-wrap').hide();
+                $('#image_loading').removeClass('img_hide');
+                $('#image_loading').addClass('img_show');
+                $(".mfp-bg").show();
+                $('#image_loading').show();
+                fancyProductDesigner.setupProducts(fpdProductsPrint);
+                setTimeout(function () {
+                    fancyProductDesigner.getProductDataURL(function (dataURLFull) {
+                        var material_id = $('#cid').val();
+                        var cprice = $('#cprice').val();
+                        var csaleoff = $('#csaleoff').val();
+                        var material = $('#cname').val();
+                        var formdata = new FormData();
+                        formdata.append('id', 6);
+                        formdata.append('cid', 2);
+                        formdata.append('name', 'Iphone  Xs Max');
+                        formdata.append('code', '202007271595869071');
+                        formdata.append('imagesinop', inopImage);
+                        formdata.append('material_id', material_id);
+                        formdata.append('material', material);
+                        formdata.append('cprice', cprice);
+                        formdata.append('csaleoff', csaleoff);
+                        formdata.append('base64_image', dataURL);
+                        formdata.append('base64_image_full', dataURLFull);
+                        $('.unit-image-one img').attr('src', dataURL);
+                        // $.ajax({
+                        //     type: 'POST',
+                        //     processData: false,
+                        //     contentType: false,
+                        //     cache: false,
+                        //     data: formdata,
+                        //     enctype: 'multipart/form-data',
+                        //     url: '/products/saveimage',
+                        //     success: function (response) {
+                        //         window.location.href = '/cart';
+                        //     },
+                        //     error: function (xhr, ajaxOptions, thrownError) {
+                        //         console.log(ajaxOptions);
+                        //         console.log(xhr.status);
+                        //         console.log(thrownError);
+                        //     }
+                        // });
+                    }, 'transparent');
+                }, 1000);
+            }, 'transparent');
+        });
+
+        if ($("input[type=radio][name=cmaterial]").length && $("input[type=radio][name=cmaterial]").val().length) {
+            var id = $("input[type=radio][name=cmaterial]:checked").val();
+            var price = $("input[type=radio][name=cmaterial]:checked").attr('data-price');
+            var saleoff = $("input[type=radio][name=cmaterial]:checked").attr('data-saleoff');
+            var code = $("input[type=radio][name=cmaterial]:checked").attr('data-code');
+            var quantity = $("input[type=radio][name=cmaterial]:checked").attr('data-quantity');
+            var material = $("input[type=radio][name=cmaterial]:checked").attr('data-material');
+
+            $(".fpd-container input[name=cid]").val(id);
+            $(".fpd-container input[name=csaleoff]").val(saleoff);
+            $(".fpd-container input[name=cprice]").val(price);
+            $(".fpd-container input[name=cname]").val(material);
+        }
+
+        $("input[type=radio][name=cmaterial]").change(function () {
+            var id = $(this).val();
+            var price = $(this).attr('data-price');
+            var saleoff = $(this).attr('data-saleoff');
+            var code = $(this).attr('data-code');
+            var quantity = $(this).attr('data-quantity');
+            var material = $(this).attr('data-material');
+
+            $(".fpd-container input[name=cid]").val(id);
+            $(".fpd-container input[name=cprice]").val(price);
+            $(".fpd-container input[name=csaleoff]").val(saleoff);
+            $(".fpd-container input[name=cname]").val(material);
+        });
+    });
+    function base64ToBlob(base64, mime) {
+        mime = mime || '';
+        var sliceSize = 1024;
+        var byteChars = window.atob(base64);
+        var byteArrays = [];
+
+        for (var offset = 0, len = byteChars.length; offset < len; offset += sliceSize) {
+            var slice = byteChars.slice(offset, offset + sliceSize);
+
+            var byteNumbers = new Array(slice.length);
+            for (var i = 0; i < slice.length; i++) {
+                byteNumbers[i] = slice.charCodeAt(i);
+            }
+
+            var byteArray = new Uint8Array(byteNumbers);
+
+            byteArrays.push(byteArray);
+        }
+
+        return new Blob(byteArrays, { type: mime });
+    }
+
+</script>
+<style>
+    .fpd-input-back-search>.fpd-back {}
+
+    .fpd-container .fpd-grid,
+    .fpd-element-toolbar .fpd-grid {
+        overflow: unset
+    }
+</style>
+<div id="main-container">
+    <div id="fancy-product-designer"
+        class="fpd-container fpd-views-inside-left fpd-top-actions-centered fpd-clearfix fpd-device-desktop fpd-grid-columns-2 fpd-shadow-1 fpd-bottom-actions-centered fpd-right-actions-centered fpd-left-actions-centered fpd-sidebar fpd-tabs fpd-tabs-side">
+    </div>
+
+    <div class="fpd-container selector-wrapper-secton">
+        <label>Chất liệu :</label>
+
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn active">
+                <input type="radio" checked name="cmaterial" class="material" value="19" data-material="Nhựa cứng"
+                    data-price="79000" data-saleoff="0" data-code="NHC" data-quantity="0" /> Nhựa cứng </label>
+            <label class="btn ">
+                <input type="radio" name="cmaterial" class="material" value="20" data-material="Dẻo cao su"
+                    data-price="69000" data-saleoff="0" data-code="DCS" data-quantity="0" /> Dẻo cao su </label>
+            <label class="btn ">
+                <input type="radio" name="cmaterial" class="material" value="21" data-material="Bóng Mica"
+                    data-price="79000" data-saleoff="0" data-code="BMC" data-quantity="0" /> Bóng Mica </label>
+            <label class="btn ">
+                <input type="radio" name="cmaterial" class="material" value="23" data-material="Kính bóng"
+                    data-price="89000" data-saleoff="0" data-code="KB" data-quantity="0" /> Kính bóng </label>
+        </div>
+    </div>
+    <p class="fpd-container">
+        <input type="hidden" value="202007271595869071" id="UploadCode" />
+        <input type="hidden" value="" id="imagesinop" />
+        <input type="hidden" name="cid" value="" id="cid">
+        <input type="hidden" name="cname" value="" id="cname">
+        <input type="hidden" name="cprice" value="" id="cprice">
+        <input type="hidden" name="csaleoff" value="" id="csaleoff">
+        <span class="btn fpd-btn" id="save-image-php">Thêm vào giỏ hàng</span>
+    </p>
+</div>
